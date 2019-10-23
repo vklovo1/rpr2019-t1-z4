@@ -8,7 +8,7 @@ public class Korpa {
     private Artikl[] izbaciArtikl(int i) {
         if(i >= brojArtikala || i < 0 || artikli == null) return artikli;
 
-        Artikl[] noviArtikli = new Artikl[brojArtikala-1];
+        Artikl[] noviArtikli = new Artikl[50];
         System.arraycopy(artikli, 0, noviArtikli, 0, i);
         System.arraycopy(artikli, i + 1, noviArtikli, i, brojArtikala - i - 1);
 
